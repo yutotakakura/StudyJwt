@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    build: ./App/Api
+    tty: true # /bin/bashを実行しているので、ttyを割り当てないと継続して実行できない
+    volumes:
+      - ./App/Api:/App
+    ports:
+      - "5000:5000"
