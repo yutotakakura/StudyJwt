@@ -40,3 +40,4 @@
 /App/obj/Debug/net6.0/App.genruntimeconfig.cache
 /App/obj/Debug/net6.0/ref/App.dll
 /App/bin/Debug/net6.0/keys/is-signing-key-4F259E7D69DA745A6888F0DB3272726A.json
+/App/bin/Debug/net6.0/keys/is-signing-key-A7F2E882D68AA72D40216D9DBFA6811A.json
