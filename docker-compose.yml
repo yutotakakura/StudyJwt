@@ -1,8 +1,15 @@
 version: '3'
 services:
+  auth:
+    build: ./App/Auth
+    tty: true # /bin/bashを実行しているので、ttyを割り当てないと継続して実行できない
+    volumes:
+      - ./App/Auth:/App
+    ports:
+      - "5000:5000"
   api:
     build: ./App/Api
-    tty: true # /bin/bashを実行しているので、ttyを割り当てないと継続して実行できない
+    tty: true
     volumes:
       - ./App/Api:/App
     ports:
